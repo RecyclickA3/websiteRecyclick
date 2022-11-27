@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!--Font Google-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Style -->
+<link rel="icon" href="assets/img/logo.png" type="image/x-icon">
+<!-- <link rel="stylesheet" href="https://cdn.js.clouldflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+<link rel="stylesheet" href="https://cdn.js.clouldflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* .product img{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        object-fit: cover;
+    } */
+    
+    #featured > div.row.mx-auto.container > nav > ul > li.page-item.active > a{
+        background-color: #76BA99;
+    }
+    #featured > div.row.mx-auto.container > nav > ul > li:nth-child(n):hover>a {
+background-color: black;
+color: #fff;
+    }
+    .pagination a{
+        color: black;
+
+    }
+    
+</style>
+
+
+    <title> Barang-RecyClick</title>
+  </head>
+  <body>
+    <!-- Navbar COY  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="" width="90" 
+            class="d-inline-block align-text-top me-3">
+            </a>
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             
+      
+              <span ><i id="bar" class="navbar-toggler-icon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="barang.html">Barang</a>
+                </li><li class="nav-item">
+                  <a class="nav-link" href="#">Riwayat</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Kontak</a>
+              </li>
+            </li>
+            <a class="nav-link" href="#">
+              <img src="assets/img/search (1).png" alt="" class="me-3">
+              <img src="assets/img/search (2).png" alt="" class="me-3">
+            </a>
+          </li>
+      
+               
+                
+              </ul>
+              <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </nav>
+<!-- <div class="container  mt-5 py-5 "> 
+   <h3 class="font-weight-bold">Tas</h3>
+          <hr>
+          
+          <p>Dapatkan produk Unggulan kami dengan harga murah dan kualitas yang membanggakan</p>
+          
+        </div>-->
+        <!-- Barang -->
+       <section id="featured" class="my-5 py-5">
+        <div class="container  mt-5 py-5 ">
+          <div class="dropdown text-end  ">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Kategori barang
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="">Aksesories</a></li>
+              <li><a class="dropdown-item" href="barang1.html">Dompet</a></li>
+              <li><a class="dropdown-item" href="barang.html">Tas</a></li>
+              <li><a class="dropdown-item" href="">Outer</a></li>
+              <li><a class="dropdown-item" href="#">Ecoprint</a></li>
+            </ul>
+          </div>
+          <h3 class="font-weight-bold">Tas</h3>
+          <hr>
+          
+          <p>Dapatkan produk Unggulan kami dengan harga murah dan kualitas yang membanggakan</p>
+          
+        </div>
+        
+      <div class="row mx-auto container" >
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3"  src="assets/img/tas.png" alt="">
+          <div class=" rate container">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <h5 class="p-name">Backpack Brondie</h5>
+          <h4 class="p-price">Rp 75.000</h4>
+          <button class="buy-btn">Masukkan Keranjang</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3"  src="assets/img/tas1.png" alt="">
+          <div class=" rate container">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <h5 class="p-name">Backpack Merun</h5>
+          <h4 class="p-price">Rp 225.000</h4>
+          <button class="buy-btn">Masukkan Keranjang</button>
+        </div><div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3"  src="assets/img/tas2.png" alt="">
+          <div class=" rate container">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <h5 class="p-name">Backpack Turtle</h5>
+          <h4 class="p-price">Rp 175.000</h4>
+          <button class="buy-btn">Masukkan Keranjang</button>
+        </div><div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-3"  src="assets/img/tas3.png" alt="">
+          <div class=" rate container">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label for="star1" title="text">1 star</label>
+          </div>
+          <h5 class="p-name">Cormy Bag</h5>
+          <h4 class="p-price">Rp 425.000</h4>
+          <button class="buy-btn">Masukkan Keranjang</button>
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3"  src="assets/img/tas01.png" alt="">
+            <div class=" rate container">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+            <h5 class="p-name">Backpack Sidewe</h5>
+            <h4 class="p-price">Rp 45.000</h4>
+            <button class="buy-btn">Masukkan Keranjang</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3"  src="assets/img/tas02.png" alt="">
+            <div class=" rate container">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+            <h5 class="p-name">Totebag Lark</h5>
+            <h4 class="p-price">Rp 25.000</h4>
+            <button class="buy-btn">Masukkan Keranjang</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3"  src="assets/img/tas03.png" alt="">
+            <div class=" rate container">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+            <h5 class="p-name">Totebag Tate</h5>
+            <h4 class="p-price">Rp 20.000</h4>
+            <button class="buy-btn">Masukkan Keranjang</button>
+          </div>
+          <div onclick="window.location.href='detailproduk.html'" class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3"  src="assets/img/tas04.png" alt="">
+            <div class=" rate container">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+            <h5 class="p-name">Totebag Baggy</h5>
+            <h4 class="p-price">Rp 25.000</h4>
+            <button class="buy-btn">Masukkan Keranjang</button>
+          </div>
+          <div class="container  mt-2 py-2"> 
+            <h3 class="font-weight-bold">Dompet</h3>
+                   <hr>
+                   
+                   <!-- <p>Dapatkan produk Unggulan kami dengan harga murah dan kualitas yang membanggakan</p>
+                    -->
+                 </div>
+                 <div class="row mx-auto container" >
+                  <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3"  src="assets/img/dompet1.png" alt="">
+                    <div class=" rate container">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                    <h5 class="p-name">Dompet Pria </h5>
+                    <h4 class="p-price">Rp 55.000</h4>
+                    <button class="buy-btn">Masukkan Keranjang</button>
+                  </div>
+                  <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3"  src="assets/img/dompet2.png" alt="">
+                    <div class=" rate container">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                    <h5 class="p-name">Dompet Wanita</h5>
+                    <h4 class="p-price">Rp 45.000</h4>
+                    <button class="buy-btn">Masukkan Keranjang</button>
+                  </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3"  src="assets/img/dompet3.png" alt="">
+                    <div class=" rate container">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                    <h5 class="p-name">Dompet Koin</h5>
+                    <h4 class="p-price">Rp 30.000</h4>
+                    <button class="buy-btn">Masukkan Keranjang</button>
+                  </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3"  src="assets/img/dompet4.png" alt="">
+                    <div class=" rate container">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                    <h5 class="p-name">Dompet Kulir</h5>
+                    <h4 class="p-price">Rp 25.000</h4>
+                    <button class="buy-btn">Masukkan Keranjang</button>
+                  </div>
+                  <div class="product text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3"  src="assets/img/dompet5.png" alt="">
+                      <div class=" rate container">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <h5 class="p-name">Dompet Begalan</h5>
+                      <h4 class="p-price">Rp 45.000</h4>
+                      <button class="buy-btn">Masukkan Keranjang</button>
+                    </div>
+                    <div class="product text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3"  src="assets/img/dompet6.png" alt="">
+                      <div class=" rate container">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <h5 class="p-name">Dompet Lipat</h5>
+                      <h4 class="p-price">Rp 55.000</h4>
+                      <button class="buy-btn">Masukkan Keranjang</button>
+                    </div>
+                    <div class="product text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3"  src="assets/img/dompet7.png" alt="">
+                      <div class=" rate container">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <h5 class="p-name">Dompet Lipat Panjang</h5>
+                      <h4 class="p-price">Rp 90.000</h4>
+                      <button class="buy-btn">Masukkan Keranjang</button>
+                    </div>
+                    <div onclick="window.location.href='detailproduk.html'" class="product text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3"  src="assets/img/dompet8.png" alt="">
+                      <div class=" rate container">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <h5 class="p-name">Dompet Lipat Kancing</h5>
+                      <h4 class="p-price">Rp 65.000</h4>
+                      <button class="buy-btn">Masukkan Keranjang</button>
+                    </div>
+                    <div class="product text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3"  src="assets/img/dompet9.png" alt="">
+                      <div class=" rate container">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <h5 class="p-name">Card Wallet Big</h5>
+                      <h4 class="p-price">Rp 20.000</h4>
+                      <button class="buy-btn">Masukkan Keranjang</button>
+                    </div>
+                    <div class="product text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3"  src="assets/img/dompet10.png" alt="">
+                      <div class=" rate container">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <h5 class="p-name">Card Wallet mini</h5>
+                      <h4 class="p-price">Rp 10.000</h4>
+                      <button class="buy-btn">Masukkan Keranjang</button>
+                    </div>
+                    <div class="container  mt-2 py-2"> 
+                      <h3 class="font-weight-bold">Outer</h3>
+                             <hr>
+                             
+                             <!-- <p>Dapatkan produk Unggulan kami dengan harga murah dan kualitas yang membanggakan</p> -->
+                             
+                           </div>
+                           <div class="row mx-auto container" >
+                            <div class="product text-center col-lg-3 col-md-4 col-12">
+                              <img class="img-fluid mb-3"  src="assets/img/outer1 1.png" alt="">
+                              <div class=" rate container">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <h5 class="p-name">Outer  Biru Laut </h5>
+                              <h4 class="p-price">Rp 155.000</h4>
+                              <button class="buy-btn">Masukkan Keranjang</button>
+                            </div>
+                            <div class="product text-center col-lg-3 col-md-4 col-12">
+                              <img class="img-fluid mb-3"  src="assets/img/outer2 1.png" alt="">
+                              <div class=" rate container">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <h5 class="p-name">Outer Makara Many</h5>
+                              <h4 class="p-price">Rp 225.000</h4>
+                              <button class="buy-btn">Masukkan Keranjang</button>
+                            </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                              <img class="img-fluid mb-3"  src="assets/img/outer3 1.png" alt="">
+                              <div class=" rate container">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <h5 class="p-name">Outer Kain 3/4 Makani</h5>
+                              <h4 class="p-price">Rp 130.000</h4>
+                              <button class="buy-btn">Masukkan Keranjang</button>
+                            </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                              <img class="img-fluid mb-3"  src="assets/img/outer4 1.png" alt="">
+                              <div class=" rate container">
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text">5 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text">4 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text">3 stars</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text">2 stars</label>
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text">1 star</label>
+                              </div>
+                              <h5 class="p-name">Outer Coksu Sunny</h5>
+                              <h4 class="p-price">Rp 200.000</h4>
+                              <button class="buy-btn">Masukkan Keranjang</button>
+                            </div>
+                            <div class="product text-center col-lg-3 col-md-4 col-12">
+                                <img class="img-fluid mb-3"  src="assets/img/outer5 1.png" alt="">
+                                <div class=" rate container">
+                                  <input type="radio" id="star5" name="rate" value="5" />
+                                  <label for="star5" title="text">5 stars</label>
+                                  <input type="radio" id="star4" name="rate" value="4" />
+                                  <label for="star4" title="text">4 stars</label>
+                                  <input type="radio" id="star3" name="rate" value="3" />
+                                  <label for="star3" title="text">3 stars</label>
+                                  <input type="radio" id="star2" name="rate" value="2" />
+                                  <label for="star2" title="text">2 stars</label>
+                                  <input type="radio" id="star1" name="rate" value="1" />
+                                  <label for="star1" title="text">1 star</label>
+                                </div>
+                                <h5 class="p-name">Outer Kusmossi</h5>
+                                <h4 class="p-price">Rp 345.000</h4>
+                                <button class="buy-btn">Masukkan Keranjang</button>
+                              </div>
+                              <div class="product text-center col-lg-3 col-md-4 col-12">
+                                <img class="img-fluid mb-3"  src="assets/img/outer6 1.png" alt="">
+                                <div class=" rate container">
+                                  <input type="radio" id="star5" name="rate" value="5" />
+                                  <label for="star5" title="text">5 stars</label>
+                                  <input type="radio" id="star4" name="rate" value="4" />
+                                  <label for="star4" title="text">4 stars</label>
+                                  <input type="radio" id="star3" name="rate" value="3" />
+                                  <label for="star3" title="text">3 stars</label>
+                                  <input type="radio" id="star2" name="rate" value="2" />
+                                  <label for="star2" title="text">2 stars</label>
+                                  <input type="radio" id="star1" name="rate" value="1" />
+                                  <label for="star1" title="text">1 star</label>
+                                </div>
+                                <h5 class="p-name">Outer Kotak Makani</h5>
+                                <h4 class="p-price">Rp 255.000</h4>
+                                <button class="buy-btn">Masukkan Keranjang</button>
+                              </div>
+                              
+                    
+                              <div class="container  mt-2 py-2"> 
+                                <h3 class="font-weight-bold">Ecoprint</h3>
+                                       <hr>
+                                       
+                                       <!-- <p>Dapatkan produk Unggulan kami dengan harga murah dan kualitas yang membanggakan</p> -->
+                                       
+                                     </div>
+                                     <div class="row mx-auto container" >
+                                      <div class="product text-center col-lg-3 col-md-4 col-12">
+                                        <img class="img-fluid mb-3"  src="assets/img/ec07 1.png" alt="">
+                                        <div class=" rate container">
+                                          <input type="radio" id="star5" name="rate" value="5" />
+                                          <label for="star5" title="text">5 stars</label>
+                                          <input type="radio" id="star4" name="rate" value="4" />
+                                          <label for="star4" title="text">4 stars</label>
+                                          <input type="radio" id="star3" name="rate" value="3" />
+                                          <label for="star3" title="text">3 stars</label>
+                                          <input type="radio" id="star2" name="rate" value="2" />
+                                          <label for="star2" title="text">2 stars</label>
+                                          <input type="radio" id="star1" name="rate" value="1" />
+                                          <label for="star1" title="text">1 star</label>
+                                        </div>
+                                        <h5 class="p-name">E-Purple </h5>
+                                        <h4 class="p-price">Rp 150.000</h4>
+                                        <button class="buy-btn">Masukkan Keranjang</button>
+                                      </div>
+                                      <div class="product text-center col-lg-3 col-md-4 col-12">
+                                        <img class="img-fluid mb-3"  src="assets/img/eco1 1.png" alt="">
+                                        <div class=" rate container">
+                                          <input type="radio" id="star5" name="rate" value="5" />
+                                          <label for="star5" title="text">5 stars</label>
+                                          <input type="radio" id="star4" name="rate" value="4" />
+                                          <label for="star4" title="text">4 stars</label>
+                                          <input type="radio" id="star3" name="rate" value="3" />
+                                          <label for="star3" title="text">3 stars</label>
+                                          <input type="radio" id="star2" name="rate" value="2" />
+                                          <label for="star2" title="text">2 stars</label>
+                                          <input type="radio" id="star1" name="rate" value="1" />
+                                          <label for="star1" title="text">1 star</label>
+                                        </div>
+                                        <h5 class="p-name">E-Blue Seee</h5>
+                                        <h4 class="p-price">Rp 205.000</h4>
+                                        <button class="buy-btn">Masukkan Keranjang</button>
+                                      </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                                        <img class="img-fluid mb-3"  src="assets/img/eco2 1.png" alt="">
+                                        <div class=" rate container">
+                                          <input type="radio" id="star5" name="rate" value="5" />
+                                          <label for="star5" title="text">5 stars</label>
+                                          <input type="radio" id="star4" name="rate" value="4" />
+                                          <label for="star4" title="text">4 stars</label>
+                                          <input type="radio" id="star3" name="rate" value="3" />
+                                          <label for="star3" title="text">3 stars</label>
+                                          <input type="radio" id="star2" name="rate" value="2" />
+                                          <label for="star2" title="text">2 stars</label>
+                                          <input type="radio" id="star1" name="rate" value="1" />
+                                          <label for="star1" title="text">1 star</label>
+                                        </div>
+                                        <h5 class="p-name">E-Dark Ramm</h5>
+                                        <h4 class="p-price">Rp 230.000</h4>
+                                        <button class="buy-btn">Masukkan Keranjang</button>
+                                      </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                                        <img class="img-fluid mb-3"  src="assets/img/eco3 1.png" alt="">
+                                        <div class=" rate container">
+                                          <input type="radio" id="star5" name="rate" value="5" />
+                                          <label for="star5" title="text">5 stars</label>
+                                          <input type="radio" id="star4" name="rate" value="4" />
+                                          <label for="star4" title="text">4 stars</label>
+                                          <input type="radio" id="star3" name="rate" value="3" />
+                                          <label for="star3" title="text">3 stars</label>
+                                          <input type="radio" id="star2" name="rate" value="2" />
+                                          <label for="star2" title="text">2 stars</label>
+                                          <input type="radio" id="star1" name="rate" value="1" />
+                                          <label for="star1" title="text">1 star</label>
+                                        </div>
+                                        <h5 class="p-name">E-Brocollyn</h5>
+                                        <h4 class="p-price">Rp 200.000</h4>
+                                        <button class="buy-btn">Masukkan Keranjang</button>
+                                      </div>
+                                      <div class="product text-center col-lg-3 col-md-4 col-12">
+                                          <img class="img-fluid mb-3"  src="assets/img/eco4 1.png" alt="">
+                                          <div class=" rate container">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                          </div>
+                                          <h5 class="p-name">E-Himawi</h5>
+                                          <h4 class="p-price">Rp 145.000</h4>
+                                          <button class="buy-btn">Masukkan Keranjang</button>
+                                        </div>
+                                        <div class="product text-center col-lg-3 col-md-4 col-12">
+                                          <img class="img-fluid mb-3"  src="assets/img/eco5 1.png" alt="">
+                                          <div class=" rate container">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                          </div>
+                                          <h5 class="p-name">E-Mokkyde </h5>
+                                          <h4 class="p-price">Rp 155.000</h4>
+                                          <button class="buy-btn">Masukkan Keranjang</button>
+                                        </div>
+                                        <div class="product text-center col-lg-3 col-md-4 col-12">
+                                          <img class="img-fluid mb-3"  src="assets/img/eco6 1.png" alt="">
+                                          <div class=" rate container">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                          </div>
+                                          <h5 class="p-name">E-Whilessri</h5>
+                                          <h4 class="p-price">Rp 135.000</h4>
+                                          <button class="buy-btn">Masukkan Keranjang</button>
+                                        </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                                          <img class="img-fluid mb-3"  src="assets/img/eco8 1.png" alt="">
+                                          <div class=" rate container">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                          </div>
+                                          <h5 class="p-name">E-Briewte</h5>
+                                          <h4 class="p-price">Rp 135.000</h4>
+                                          <button class="buy-btn">Masukkan Keranjang</button>
+                                        </div>
+                                        <div class="product text-center col-lg-3 col-md-4 col-12">
+                                          <img class="img-fluid mb-3"  src="assets/img/eco9 1.png" alt="">
+                                          <div class=" rate container">
+                                            <input type="radio" id="star5" name="rate" value="5" />
+                                            <label for="star5" title="text">5 stars</label>
+                                            <input type="radio" id="star4" name="rate" value="4" />
+                                            <label for="star4" title="text">4 stars</label>
+                                            <input type="radio" id="star3" name="rate" value="3" />
+                                            <label for="star3" title="text">3 stars</label>
+                                            <input type="radio" id="star2" name="rate" value="2" />
+                                            <label for="star2" title="text">2 stars</label>
+                                            <input type="radio" id="star1" name="rate" value="1" />
+                                            <label for="star1" title="text">1 star</label>
+                                          </div>
+                                          <h5 class="p-name">E-Kuter</h5>
+                                          <h4 class="p-price">Rp 125.000</h4>
+                                          <button class="buy-btn">Masukkan Keranjang</button>
+                                        </div>
+                                        <div class="container  mt-2 py-2"> 
+                                          <h3 class="font-weight-bold">Udeng</h3>
+                                                 <hr>
+                                                 
+                                                 <!-- <p>Dapatkan produk Unggulan kami dengan harga murah dan kualitas yang membanggakan</p> -->
+                                                 
+                                               </div>
+                                               <div class="row mx-auto container" >
+                                                <div class="product text-center col-lg-3 col-md-4 col-12">
+                                                  <img class="img-fluid mb-3"  src="assets/img/udeng1 1.png" alt="">
+                                                  <div class=" rate container">
+                                                    <input type="radio" id="star5" name="rate" value="5" />
+                                                    <label for="star5" title="text">5 stars</label>
+                                                    <input type="radio" id="star4" name="rate" value="4" />
+                                                    <label for="star4" title="text">4 stars</label>
+                                                    <input type="radio" id="star3" name="rate" value="3" />
+                                                    <label for="star3" title="text">3 stars</label>
+                                                    <input type="radio" id="star2" name="rate" value="2" />
+                                                    <label for="star2" title="text">2 stars</label>
+                                                    <input type="radio" id="star1" name="rate" value="1" />
+                                                    <label for="star1" title="text">1 star</label>
+                                                  </div>
+                                                  <h5 class="p-name">E-Purple </h5>
+                                                  <h4 class="p-price">Rp 150.000</h4>
+                                                  <button class="buy-btn">Masukkan Keranjang</button>
+                                                </div>
+                                                <div class="product text-center col-lg-3 col-md-4 col-12">
+                                                  <img class="img-fluid mb-3"  src="assets/img/eco1 1.png" alt="">
+                                                  <div class=" rate container">
+                                                    <input type="radio" id="star5" name="rate" value="5" />
+                                                    <label for="star5" title="text">5 stars</label>
+                                                    <input type="radio" id="star4" name="rate" value="4" />
+                                                    <label for="star4" title="text">4 stars</label>
+                                                    <input type="radio" id="star3" name="rate" value="3" />
+                                                    <label for="star3" title="text">3 stars</label>
+                                                    <input type="radio" id="star2" name="rate" value="2" />
+                                                    <label for="star2" title="text">2 stars</label>
+                                                    <input type="radio" id="star1" name="rate" value="1" />
+                                                    <label for="star1" title="text">1 star</label>
+                                                  </div>
+                                                  <h5 class="p-name">E-Blue Seee</h5>
+                                                  <h4 class="p-price">Rp 205.000</h4>
+                                                  <button class="buy-btn">Masukkan Keranjang</button>
+                                                </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                                                  <img class="img-fluid mb-3"  src="assets/img/eco2 1.png" alt="">
+                                                  <div class=" rate container">
+                                                    <input type="radio" id="star5" name="rate" value="5" />
+                                                    <label for="star5" title="text">5 stars</label>
+                                                    <input type="radio" id="star4" name="rate" value="4" />
+                                                    <label for="star4" title="text">4 stars</label>
+                                                    <input type="radio" id="star3" name="rate" value="3" />
+                                                    <label for="star3" title="text">3 stars</label>
+                                                    <input type="radio" id="star2" name="rate" value="2" />
+                                                    <label for="star2" title="text">2 stars</label>
+                                                    <input type="radio" id="star1" name="rate" value="1" />
+                                                    <label for="star1" title="text">1 star</label>
+                                                  </div>
+                                                  <h5 class="p-name">E-Dark Ramm</h5>
+                                                  <h4 class="p-price">Rp 230.000</h4>
+                                                  <button class="buy-btn">Masukkan Keranjang</button>
+                                                </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                                                  <img class="img-fluid mb-3"  src="assets/img/eco3 1.png" alt="">
+                                                  <div class=" rate container">
+                                                    <input type="radio" id="star5" name="rate" value="5" />
+                                                    <label for="star5" title="text">5 stars</label>
+                                                    <input type="radio" id="star4" name="rate" value="4" />
+                                                    <label for="star4" title="text">4 stars</label>
+                                                    <input type="radio" id="star3" name="rate" value="3" />
+                                                    <label for="star3" title="text">3 stars</label>
+                                                    <input type="radio" id="star2" name="rate" value="2" />
+                                                    <label for="star2" title="text">2 stars</label>
+                                                    <input type="radio" id="star1" name="rate" value="1" />
+                                                    <label for="star1" title="text">1 star</label>
+                                                  </div>
+                                                  <h5 class="p-name">E-Brocollyn</h5>
+                                                  <h4 class="p-price">Rp 200.000</h4>
+                                                  <button class="buy-btn">Masukkan Keranjang</button>
+                                                </div>
+                                                <div class="product text-center col-lg-3 col-md-4 col-12">
+                                                    <img class="img-fluid mb-3"  src="assets/img/eco4 1.png" alt="">
+                                                    <div class=" rate container">
+                                                      <input type="radio" id="star5" name="rate" value="5" />
+                                                      <label for="star5" title="text">5 stars</label>
+                                                      <input type="radio" id="star4" name="rate" value="4" />
+                                                      <label for="star4" title="text">4 stars</label>
+                                                      <input type="radio" id="star3" name="rate" value="3" />
+                                                      <label for="star3" title="text">3 stars</label>
+                                                      <input type="radio" id="star2" name="rate" value="2" />
+                                                      <label for="star2" title="text">2 stars</label>
+                                                      <input type="radio" id="star1" name="rate" value="1" />
+                                                      <label for="star1" title="text">1 star</label>
+                                                    </div>
+                                                    <h5 class="p-name">E-Himawi</h5>
+                                                    <h4 class="p-price">Rp 145.000</h4>
+                                                    <button class="buy-btn">Masukkan Keranjang</button>
+                                                  </div>
+                                                  <div class="product text-center col-lg-3 col-md-4 col-12">
+                                                    <img class="img-fluid mb-3"  src="assets/img/eco5 1.png" alt="">
+                                                    <div class=" rate container">
+                                                      <input type="radio" id="star5" name="rate" value="5" />
+                                                      <label for="star5" title="text">5 stars</label>
+                                                      <input type="radio" id="star4" name="rate" value="4" />
+                                                      <label for="star4" title="text">4 stars</label>
+                                                      <input type="radio" id="star3" name="rate" value="3" />
+                                                      <label for="star3" title="text">3 stars</label>
+                                                      <input type="radio" id="star2" name="rate" value="2" />
+                                                      <label for="star2" title="text">2 stars</label>
+                                                      <input type="radio" id="star1" name="rate" value="1" />
+                                                      <label for="star1" title="text">1 star</label>
+                                                    </div>
+                                                    <h5 class="p-name">E-Mokkyde </h5>
+                                                    <h4 class="p-price">Rp 155.000</h4>
+                                                    <button class="buy-btn">Masukkan Keranjang</button>
+                                                  </div>
+                                                  <div class="product text-center col-lg-3 col-md-4 col-12">
+                                                    <img class="img-fluid mb-3"  src="assets/img/eco6 1.png" alt="">
+                                                    <div class=" rate container">
+                                                      <input type="radio" id="star5" name="rate" value="5" />
+                                                      <label for="star5" title="text">5 stars</label>
+                                                      <input type="radio" id="star4" name="rate" value="4" />
+                                                      <label for="star4" title="text">4 stars</label>
+                                                      <input type="radio" id="star3" name="rate" value="3" />
+                                                      <label for="star3" title="text">3 stars</label>
+                                                      <input type="radio" id="star2" name="rate" value="2" />
+                                                      <label for="star2" title="text">2 stars</label>
+                                                      <input type="radio" id="star1" name="rate" value="1" />
+                                                      <label for="star1" title="text">1 star</label>
+                                                    </div>
+                                                    <h5 class="p-name">E-Whilessri</h5>
+                                                    <h4 class="p-price">Rp 135.000</h4>
+                                                    <button class="buy-btn">Masukkan Keranjang</button>
+                                                  </div><div class="product text-center col-lg-3 col-md-4 col-12">
+                                                    <img class="img-fluid mb-3"  src="assets/img/eco8 1.png" alt="">
+                                                    <div class=" rate container">
+                                                      <input type="radio" id="star5" name="rate" value="5" />
+                                                      <label for="star5" title="text">5 stars</label>
+                                                      <input type="radio" id="star4" name="rate" value="4" />
+                                                      <label for="star4" title="text">4 stars</label>
+                                                      <input type="radio" id="star3" name="rate" value="3" />
+                                                      <label for="star3" title="text">3 stars</label>
+                                                      <input type="radio" id="star2" name="rate" value="2" />
+                                                      <label for="star2" title="text">2 stars</label>
+                                                      <input type="radio" id="star1" name="rate" value="1" />
+                                                      <label for="star1" title="text">1 star</label>
+                                                    </div>
+                                                    <h5 class="p-name">E-Briewte</h5>
+                                                    <h4 class="p-price">Rp 135.000</h4>
+                                                    <button class="buy-btn">Masukkan Keranjang</button>
+                                                  </div>
+                                                  <div class="product text-center col-lg-3 col-md-4 col-12">
+                                                    <img class="img-fluid mb-3"  src="assets/img/eco9 1.png" alt="">
+                                                    <div class=" rate container">
+                                                      <input type="radio" id="star5" name="rate" value="5" />
+                                                      <label for="star5" title="text">5 stars</label>
+                                                      <input type="radio" id="star4" name="rate" value="4" />
+                                                      <label for="star4" title="text">4 stars</label>
+                                                      <input type="radio" id="star3" name="rate" value="3" />
+                                                      <label for="star3" title="text">3 stars</label>
+                                                      <input type="radio" id="star2" name="rate" value="2" />
+                                                      <label for="star2" title="text">2 stars</label>
+                                                      <input type="radio" id="star1" name="rate" value="1" />
+                                                      <label for="star1" title="text">1 star</label>
+                                                    </div>
+                                                    <h5 class="p-name">E-Kuter</h5>
+                                                    <h4 class="p-price">Rp 125.000</h4>
+                                                    <button class="buy-btn">Masukkan Keranjang</button>
+                                                  </div>
+          <nav aria-label="...">
+            <ul class="pagination mt-5">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+      </section>
+
+
+<!-- FOOTER -->
+        <section id="contact" c>
+            <div class="contrainer-fluid overlay h-100">
+              <div class="contrainer">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>Dapatkan Informasi Mengenai Kami Melalui : </h3>
+                    <div class="kontak">
+                      <h6>Kontak</h6>
+                      <div class="mb-lg-3 me-1 d-flex align-items-center"><img src="assets/img/lmt.png" alt="">
+                        <a href="#">Rumah Akhdan Robbani No 54 Blok 89 Nganjuk</a>
+                      </div>
+                      <div class="mb-lg-3 me-1"><img src="assets/img/tlp.png" alt="">
+                        <a href="#">022-6789-7778</a>
+                      </div>
+                      <div class="mb-lg-3 me-1"><img src="assets/img/eml.png" alt="">
+                        <a href="#">Recyclick@gmail.com</a>
+                      </div>
+                      <h6>Sosial Media</h6>
+                      <a href="#" class="linksosmed"><img src="assets/img/sosomed.png" alt="">RecyclickNganjuk</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-contact w-100">
+                      <form>
+                        <h2>Ada Pertanyaan?</h2>
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput" class="d-flex align-items-center">Masukkan E-mail Anda</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput" class="d-flex align-items-center">Masukkan Komentar Anda</label>
+                        </div>
+                        <button type="submit"class="button-kirim">Kirim</button>
+                      </form>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            </section>
+          <footer class="d-flex align-items-center position-relative">
+            <div class="container-fluid">
+              <div class="container">
+              <div class="row">
+                <div class="col-md-7 d-flex align-items-center justify-content-lg-start justify-content-center">
+                  <img src="assets/img/imgfooter.png" alt="">
+                </div>
+                <div class="col-md-5 d-flex justify-content-evenly justify-content-center">
+                
+              </div>
+              </div>
+              <div class="row position-absolute copyright start-50 translate-middle">
+                <div class="col-12 ">
+                  <p class="text-center">Copyright bg A3 Teheroam all right reserved</p>
+                </div>
+              </div>
+              </div>
+              
+            </div>
+          </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+  
+
+</html>   

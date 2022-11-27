@@ -1,0 +1,627 @@
+ :root{
+    --pr-color :#76BA99;
+ }
+ body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: var(--pr-color);
+    color: #fff;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color:black ;
+    color: white;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+h6{
+    color: #D8D8D8;
+}
+hr{
+    width: 200px;
+    height: 2px;
+    background-color: var(--pr-color);
+}
+.navbar{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar i:hover,  .navbar-light .navbar-nav .nav-link.active, navbar i.active{
+    color: var(--pr-color);
+}
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0.7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+#bar:hover,
+#bar.active{
+color: white;
+}
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+@media only screen and (max-width :991px){
+    body>nav>div>button:hover,
+    body>nav>div>button:focus{
+        background-color: var(--pr-color);
+    }
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar{
+        color: var(--pr-color);
+    }
+    #navbarSupportedContent>ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent>ul > li:nth-child(n) >a{
+        padding: 10px;
+    }
+}
+#home{
+    /* background-color: #fff; */
+    background-image: url(../assets/img/jaclyn-moy-ugZxwLQuZec-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 20px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home .container{
+    padding: 148px 0 148px 0;
+}
+#home span{
+    color: var(--pr-color);
+}
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy-btn{
+    /* background: #76BA99; */
+    transform: translateY(20);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-btn{
+    /* background: #76BA99; */
+    transform: translateY(0);
+    opacity: 1;
+    
+}
+.star i{
+   padding: 0.1;
+}
+.populer{
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+.populer img{
+    transition: 0.3s all;
+}
+.populer:hover img{
+    opacity: 0.7;
+}
+.populer .buy-btn{
+    /* background: #76BA99; */
+    transform: translateY(20);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.populer:hover .buy-btn{
+    /* background: #76BA99; */
+    transform: translateY(0);
+    opacity: 1;
+    
+}
+.button-kategori{
+    width: 260px;
+    height: 60px;
+    background-color: var(--pr-color);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+#fitur h2{
+    font-size: 48px;
+    font-weight: 500;
+    
+}
+.card-fitur h5{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+.card-fitur span{
+    color: #fff;
+    font-size: 14px;
+}
+.card-fitur h6{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.card-fitur button{
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-fitur .overlay{
+    background-color: rgba(0,0,0, 0);
+    opacity: 0;
+    transition: all ease-in-out .3s;
+}
+.card-fitur .overlay:hover{
+    background-color: rgba(0,0,0, 0.6);
+    opacity: 1;     
+}
+.button-arrow-left{
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: var(--pr-color);
+    padding: 0;
+}
+.button-arrow-right{
+    border: none;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+    background-color: var(--pr-color);
+    padding: 0;
+}
+#contact{
+    background-image: url(../assets/img/yyy.jpg);
+    margin-top: 158px;
+    padding-right: 0%;
+    padding-left: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#contact .overlay{
+    background: rgb(0, 0, 0, 0.5);
+    background-size: cover;
+    padding: 5%;
+   
+}
+#contact .container{
+    padding: 148px 0 148px 0;
+}
+#contact h3{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+#contact h6{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 19px 0 14px 0;
+}
+.kontak a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 18px;
+    width: 332px;
+    display: inline-block;
+}
+.linksosmed{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.card-contact{
+    width: 100%;
+    height: 450px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 52px 50px;
+    margin-top: 60px;
+    
+}
+.card-contact h2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--pr-color);
+    text-align: center;
+    margin-bottom: 21px;
+}
+.form-control{
+    background: #C4C4C4;
+    height: 75px !important;
+
+}
+.form-floating label{
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: #141414;
+}
+.button-kirim{
+    width: 100%;
+    height: 70px;
+    background: var(--pr-color);
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #EFFFF7;
+    
+}
+footer{
+    width: 100%;
+    height: 270px; 
+    background: #000000;
+}
+.copyright{
+    bottom: 1%;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+ footer a{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+ }
+ #cart-container table{
+ border-collapse: collapse;
+ width: 100%;
+ table-layout: fixed;
+
+ }
+ #cart-container table thead{
+    font-weight: 700;
+ }
+ #cart-container table thead td{
+    /* font-weight: 700; */
+    background: var(--pr-color);
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+ }
+ #cart-container table td{
+    border: 1px solid #76BA99;
+    text-align: center;
+ }
+ #cart-container table td:nth-child(1){
+    width: 100px;
+ }
+ #cart-container table td:nth-child(2),
+ #cart-container table td:nth-child(3){
+    width: 200px;
+ }
+ #cart-container table td:nth-child(4),
+ #cart-container table td:nth-child(5),
+ #cart-container table td:nth-child(6)
+ {
+    width: 170px;
+ }
+ #cart-container table tbody .prd{
+    width: 80 px;
+    height: 80px;
+    object-fit: cover;
+    margin: 3px;
+ }
+ #cart-bottom .total h5{
+    background: var(--pr-color);
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+    font-weight: 700;
+
+ }
+
+.card-body a{
+    margin-left: 900px;
+    margin-top: 30px;
+}
+/* .dropdown {
+    background-color: var(--pr-color);
+    font-weight: 500;
+} */
+/* {
+    margin: 0;
+    padding: 0;
+} */
+.rate {
+    float: left;
+    height: 46px;
+    
+
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.card-header{
+color: var(--pr-color);
+}
+.contact1 .info-item {
+    background: var(--pr-color);
+    padding: 30px;
+    height: 100%;
+  }
+  
+  .contact1 .info-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .contact1 .judul h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    
+  }
+  .contact1 .E-mail h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    
+  }
+  .contact1 .judul p {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .contact1 .E-mail p {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .contact1 .call h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    
+  }
+  .contact1 .call p {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .contact1 .jam h3{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    
+  }
+  .contact1 .jam strong{
+    /* font-size: 20px; */
+    padding: 0;
+    margin: 0;
+    /* line-height: 24px;
+    font-size: 14px; */
+    color: #fff;
+    
+  }
+  .contact1 .info-item .social-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: rgba(55, 55, 63, 0.7);
+    line-height: 1;
+    margin: 4px 6px 0 0;
+    transition: 0.3s;
+  }
+  
+  .contact1 .info-item .social-links a:hover {
+  color: var(--pr-color);
+  }
+  
+  .contact1 .php-email-form {
+    width: 100%;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(55, 55, 63, 0.7)
+  }
+  
+  .contact1 .php-email-form .form-group {
+    padding-bottom: 20px;
+  }
+  
+  .contact1 .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: var(--pr-color);
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact1 .php-email-form .error-message br+br {
+    margin-top: 25px;
+  } 
+  
+  .contact1 .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .contact1 .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .contact1 .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #059652;
+    border-top-color: #fff;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+  .contact1 .php-email-form input,
+  .contact1 .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+  .contact1 .php-email-form input:focus,
+  .contact1 .php-email-form textarea:focus {
+    border-color: var(--color-primary);
+  }
+  
+  .contact1 .php-email-form input {
+    height: 48px;
+  }
+  
+  .contact1 .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact1 .php-email-form button[type=submit] {
+    background: var(--pr-color);
+    border: 0;
+    padding: 12px 40px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .contact1 .php-email-form button[type=submit]:hover {
+    background: #ec2727;
+  }
+  
